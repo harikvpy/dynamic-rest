@@ -34,11 +34,19 @@ jobs:
           drf-version: '3.13.*'
         - dj-version: '5.0.*'
           python-version: 3.9
-        - dj-version: '5.0.*'
-          drf-version: '3.13.*'
         - dj-version: '5.1.*'
           python-version: 3.9
         - dj-version: '5.0.*'
+          drf-version: '3.11.*'
+        - dj-version: '5.0.*'
+          drf-version: '3.12.*'
+        - dj-version: '5.0.*'
+          drf-version: '3.13.*'
+        - dj-version: '5.1.*'
+          drf-version: '3.11.*'
+        - dj-version: '5.1.*'
+          drf-version: '3.12.*'
+        - dj-version: '5.1.*'
           drf-version: '3.13.*'
 
     services:
