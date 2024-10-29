@@ -50,6 +50,8 @@ jobs:
           drf-version: '3.13.*'
         - python-version: 3.12
           dj-version: '3.0.*'
+        - python-version: 3.12
+          dj-version: '3.1.*'
 
     services:
       postgres:
