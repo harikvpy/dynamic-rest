@@ -84,6 +84,9 @@ class FilterNode(object):
                 if isinstance(model_field, RelatedObject):
                     model_field_name = model_field.field.related_query_name()
 
+            # Related model fiels are represented as 'related_model.field_name'
+            # Replace the '.' with '__' for Django ORM filtering.
+            model_field_name = model_field_name.replace(".", "__")
             # If get_all_fields() was used above, field could be unbound,
             # and field.source would be None
             rewritten.append(model_field_name)
